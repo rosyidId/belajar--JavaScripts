@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>String Template</title>
+</head>
+
+<body>
+    <script>
+        // backtik = ``
+        const name = "M Nurhakimirrosyid Yakub";
+        const firstName = "Muh";
+        const middleName = "Nurhakimirrosyid";
+        const lastName = "Yakub";
+        const template = `Name : ${firstName} ${middleName} ${lastName}`;
+
+        // ditampilkan di console
+        console.info(template);
+
+
+        // expresion string template
+        const nilai = 80;
+        const template2 = `Name : ${name}, Lulus : ${nilai > 75}`;
+
+        console.info(template2);
+
+        // multi line value variabel with backtik
+
+        const multiLine = `selamat datang,
+nama saya rosyid,
+hobi tidur,
+kegiatan main game`;
+        document.writeln("<prep>");
+
+        document.writeln(multiLine);
+
+        document.writeln("</prep>");
+    </script>
+</body>
+
+</html>

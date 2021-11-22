@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Parameter optional parameter</title>
+</head>
+<body>
+    <script>
+        // Secara default, parameter di function itu optional 
+        // Artinya kita wajib mengisi value kita memanggil function
+        // Jika tidak ada value yang kita kirim ke parameter ketika memanggil function,maka secara otomatis parameter tersebut bernilai undifined
+        function sayHello(firstName, middleName, lastName){
+            console.info(firstName)
+            console.info(middleName)
+            console.info(lastName)
+        }
+        sayHello();
+        sayHello("rosyid", "belajar", "javascript");
+    </script>
+</body>
+</html>

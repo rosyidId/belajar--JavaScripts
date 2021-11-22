@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Operator Perbandingan</title>
+</head>
+
+<body>
+    <script>
+        // Operator logika adalah operator untuk dua buah data boolean
+        // Hasil dari operator logika adalah boolean/true dan false
+        // && | Dan
+        const nilaiUjian = 70;
+        const nilaiAbsensi = 70;
+
+        const lulusUjian = nilaiUjian > 75;
+        const lulusAbsensi = nilaiAbsensi > 75;
+
+        const lulus = lulusUjian && lulusAbsensi;
+        document.writeln(lulus);
+        document.writeln("<br>");
+
+        // || = OR
+        const nilai = lulusUjian || lulusAbsensi;
+        document.writeln(nilai);
+        document.writeln("<br>")
+
+
+        // ! = Kebalikan 
+        const akhir = lulusUjian != lulusAbsensi;
+        document.writeln(akhir);
+        document.writeln("<br>")
+    </script>
+</body>
+
+</html>

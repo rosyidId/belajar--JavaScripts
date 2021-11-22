@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Oprasi array</title>
+</head>
+
+<body>
+    <script>
+        console.info("data sebelum di ubah");
+        const nama = [];
+        nama.push("rosyid");
+        nama.push("ali", "budi");
+
+        console.table(nama);
+        console.info(nama[0]);
+        console.info(nama[1]);
+        console.info(nama[2]);
+
+
+        console.info("data setelah diubah");
+        nama[0] = "doni";
+
+        console.table(nama);
+        console.info(nama.length);
+        delete nama[1]; // hapus index dan value
+        console.table(nama);
+        nama.push("ali lagi"); // menambahkan array
+        console.table(nama);
+        nama[1] = "Diubah lagi"; // ubah arrah dengan index
+        console.table(nama);
+        nama.push(1, 2, 3, 4, 5);
+        nama.push(["makan", "minum", "tidur"]);
+        console.table(nama);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function Return Value Lebih Dari Satu</title>
+</head>
+<body>
+    <script>
+        function getFinalScore(value){
+            if (value > 90){
+                return "A";
+            }else if(value > 80){
+                return "B";
+            }else if(value > 70){
+                return "C";
+            }else if(value > 60){
+                return "D";
+            }else{
+                return "E";
+            }
+        }
+        const finalValue = getFinalScore(80);
+        document.writeln(`<p>Jadi nilainya adalah ${finalValue}</p>`);
+
+        // Saat kita menggunakan kata kunci return, maka kode setelah return tersebut tidak akan dieksekusi
+        // Kita bisa menggunakan return untuk menghentikan eksekusi sebuah function
+        
+        function isContains(array, searchValue){
+            for (const element of array){
+                console.info(`<p>Iterasi Element ${element}</p>`);
+                if (element === searchValue){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        // const array = [1,23,4,5,6,7,7,67,68];
+        // const search = 6;
+        // const found = isContains(array, search);
+        // document.writeln(`<p> ${found}</p>`);
+
+        const found = isContains([1,2,3,56,57,57,55,5,64,5,45,3], 5);
+        document.writeln(`<p>${found}</p>`);
+    </script>
+</body>
+</html>

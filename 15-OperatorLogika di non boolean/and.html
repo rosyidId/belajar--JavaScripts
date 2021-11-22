@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>And di non boolean</title>
+</head>
+<body>
+    <script>
+        // Operator logika AND (&&), membaca dari kiri ke kanan
+        // Operator ini akann mengambil nilai pertama yang falsy
+        // Jika tidak ada satupun yang bernilai falsy, maka yang terakhir yang akan diambil
+        console.info("hello" && '');
+        console.info("" && []);
+        console.info("0" && "NOL");
+        console.info(0 && "NOL");
+        console.info(null && "NULL");
+        console.info(undefined && "UNDIFINED");
+        console.info("undifined" && "null");
+
+    </script>    
+</body>
+</html>

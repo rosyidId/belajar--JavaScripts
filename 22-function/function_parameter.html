@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function Parameter</title>
+</head>
+<body>
+    <script>
+        /*
+            - Kita bisa mengirim informasi ke function yang ingin kita pangggil
+            - Untuk melakukan hal tersebut, kita perlu menambahkan parameter atau argument di function
+              yang sudah kita buat
+            - Parameter ditempatkan di dalam kurung() di deklarasi method
+            - Parameter bisa lebih dari satu, jika lebih dari satu harus dipisah menggunakan tanda koma
+
+        */
+
+        // membuat function dengan parameter
+        function sayHello(firstName, lastName){
+            document.writeln(`<p>Selamat Datang ${firstName} ${lastName}</p>`);
+        }
+
+        sayHello("Belajar", "JavaScript");
+        sayHello("Belajar", "React");
+    </script>
+</body>
+</html>

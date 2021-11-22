@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fungsi Return</title>
+</head>
+<body>
+    <script>
+        function luas(p,l){
+            return p*l;
+        }
+        function hitung(){
+            alert(luas(document.persegi.panjang.value, document.persegi.lebar.value))
+        }
+    </script>
+
+    <form name="persegi">
+        <input name="panjang">
+        <input name="lebar">
+    </form> 
+    <button onclick="hitung()">Hitung</button>
+</body>
+</html>

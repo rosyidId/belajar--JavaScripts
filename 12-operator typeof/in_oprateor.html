@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>In Operator</title>
+</head>
+
+<body>
+    <script>
+        // untuk melakukan pengecekan,apakah dalam object itu ada property ini
+        const person = {
+            firstName: "rosyid",
+            lastName: "junior",
+        };
+
+        if ("firstName" in person) {
+            document.writeln(`Hello ${person.firstName} <br>`);
+        } else {
+            document.writeln("Tidak ada!");
+        }
+        document.writeln("============================= <br>");
+
+        const student = {
+            firstName: "Budi",
+            middleName: undefined,
+            lastName: "Joko",
+        }
+
+        if ("firstName" in student) {
+            document.writeln(`Hello ${student.middleName}<br>`);
+        } else {
+            document.writeln("Hello semangat")
+        }
+
+        const names = [null, "budi", null];
+        const result = 0 in names;
+        document.writeln(`<p>${result}</p>`);
+    </script>
+</body>
+
+</html>

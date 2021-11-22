@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ternary Oprator</title>
+</head>
+
+<body>
+    <script>
+        const nilai = 75;
+        let ucapan;
+
+        if (nilai >= 75) {
+            ucapan = "Selamat Anda Lulus";
+        } else {
+            ucapan = "Selahkan Coba Lagi";
+        }
+
+        document.writeln(`<p>${ucapan}</p><br>`);
+
+        // menggunakan Ternary Oprator
+        document.writeln("Menggunakan Ternary Operator\n");
+
+        const ucapan1 = nilai >= 75 ? "Selamat Anda Lulus" : "Silahkan Coba Lagi";
+        document.writeln(`<p>${ucapan1}</p>`);
+    </script>
+</body>
+
+</html>

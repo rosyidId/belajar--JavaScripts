@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For In</title>
+</head>
+<body>
+    <script>
+        // For in merupakan for yang digunakan untuk mengiterasi seluruh data property di object atau index di array
+        // Walaupun for in bisa digunakan untuk Array, namun tidak derekomenasikan untuk Array, karena biasanya kita jarang sekali butuh data index untuk Array, kita bisa menggunakan For Of (yang di bahas setelah ini)
+
+        const person={
+            firstName : "Rosyid",
+            middleName : "Budi",
+            lastName : "Eko ju",
+        }
+
+        for (const property in person){
+            document.writeln(`<p>${property} : ${person[property]}</p>`);
+        }
+
+        const names = ["Belajar", "JavaScript", "React"]
+
+        for (index in names){
+            document.writeln(`<p>${index} : ${names[index]}</p>`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function Return value</title>
+</head>
+<body>
+    <script>
+        /*
+            - Secara default,function itu tidak menghasilkan value apapun, namun jika kita ingin, kita bisa membuat function mengembalikan value
+            - Agar function bisa menghasilkan value, kita bisa menggunakan kata kunci return di dalam functionnya
+            - Dan didalam block function, untuk menghasilkan nilai tersebut, kita harus menggunakan kata kunci return, lalu diikuti dengan data yang ingin kita hasilkan
+            - Function hanya bisa mengembalikan satu data,jika kita ingin mengembalikan bebrapa data sekaligus,kita bisa menggunakan Array sebagai returnnya
+        */ 
+    // membuat function dengan parameter dan return value
+    function sayHello(firstName, lastName){
+        const say = `Hello ${firstName} ${lastName}`;
+        return say;
+    }
+
+    // memanggil function dan menangkap return value
+    const result = sayHello("Belajar", "JavaScript");
+    document.writeln(`<p>${result}</p>`);
+    </script>
+</body>
+</html>

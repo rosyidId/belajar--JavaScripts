@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Default value</title>
+</head>
+<body>
+    <script>
+        /*
+        - Sekarang kita tahu bahwa parameter itu optional, artinya kita bisa memberi value terhadap parameter
+        - Parameter juga bisa kita beri default value, artinya jika ketika kita tidak mengirim data ke 
+          parameter atau kita mengirim data undifined, maka secara otomatis paramater akan diisi oleh default value
+        */
+        function register(name, gender= "kosong"){
+            console.log(name)
+            console.log(gender)
+        }
+        register("rosyid", "dina");
+        register("budi");
+        register("joko", undefined);
+    </script>
+</body>
+</html>

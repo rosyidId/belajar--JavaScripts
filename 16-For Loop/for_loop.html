@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+        // For adlah salah satu kunci yang bisa digunakan untuk melakukan perulangan
+        // Blok kode yang terdapat didalah for akan selalu diulangi selama kondisi for terpenuhi
+
+        // for (init statement; kondisi; post statement){
+        // perulangannya
+        // }
+        /* - init satatement akan dieksekusi hanya sekali di awal sebelum perulangan
+           - Kondisi akan dilakukan pengecekan dalam setiap perulangan, jika true perulangan akan dilakukan jika false perulangan akan berhenti
+           - Post statement akan dieksekusi setiap kali diakhiri perulangan
+           - Init statement, Kondisi dan Post Statement tidak wajik disi, jika KOndisi tidak diisi, berarti kondisi selalu ernilai true
+        */
+
+        // Tidak ada statement
+        // for (;;){
+        //     alert("For Loop");
+        // }
+
+        // Menggunakan kondisi
+        // let counter = 1;
+        // for(;counter <= 10;){
+        //     document.writeln(`<p>Perulangan ${counter}</p>`)
+        //     counter++;
+        // }
+
+        for(let counter = 1; counter <= 20; counter--){
+            document.writeln(`<p>Perulangan ${counter}</p>`)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tipe data Object</title>
+</head>
+
+<body>
+    <script>
+        // membuat object kosong = {}
+
+        const person = {};
+
+        // Menambah atau Mengubah
+        person["nama"] = "Rosyid";
+        person["alamat"] = "Sakra";
+        person["umur"] = 30;
+
+        // delete person["alamat"]; // menghapus object
+        console.table(person);
+
+        // Membuat object dengan Properties
+
+        const orang = {
+            "nama lengkap": "Budi Hermawan",
+            asal: "indonesia",
+            usia: 30,
+        };
+        console.table(orang);
+        delete orang["asal"];
+        console.table(orang);
+    </script>
+</body>
+
+</html>
